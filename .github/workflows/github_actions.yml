@@ -16,12 +16,12 @@ jobs:
           registry_username: ${{ secrets.DOCKER_LOGIN }}
           registry_password: ${{ secrets.DOCKER_TOKEN }}
           registry_host: registry.relizahub.com
-          image_namespace: registry.relizahub.com/library
+          image_namespace: registry.relizahub.com/8c86c264-f905-42b0-9869-d6f6a6e59b8f-private
           image_name: rebom-backend
           reliza_api_id: ${{ secrets.RELIZA_API_ID }}
           reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
           path: backend
-          reliza_project_id: 116bbe7f-35ea-4554-bbde-3845059961d5
+          reliza_project_id: df5ecc13-f62b-4450-ab75-97f478b92a2c
   build-frontend:
     name: Build And Push Frontend
     runs-on: ubuntu-latest
@@ -32,12 +32,12 @@ jobs:
           registry_username: ${{ secrets.DOCKER_LOGIN }}
           registry_password: ${{ secrets.DOCKER_TOKEN }}
           registry_host: registry.relizahub.com
-          image_namespace: registry.relizahub.com/library
+          image_namespace: registry.relizahub.com/8c86c264-f905-42b0-9869-d6f6a6e59b8f-private
           image_name: rebom-frontend
           reliza_api_id: ${{ secrets.RELIZA_API_ID }}
           reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
           path: frontend
-          reliza_project_id: a77887b8-2095-46ce-851f-47c72eca863b
+          reliza_project_id: 063747e6-1bb4-49e1-a68d-fbc07465ea9b
   build-helm:
     name: Build And Push Helm Chart
     runs-on: ubuntu-latest
@@ -47,10 +47,10 @@ jobs:
         with:
           registry_username: ${{ secrets.DOCKER_LOGIN }}
           registry_password: ${{ secrets.DOCKER_TOKEN }}
-          registry_host: https://registry.relizahub.com/chartrepo/library
+          registry_host: https://registry.relizahub.com/chartrepo/8c86c264-f905-42b0-9869-d6f6a6e59b8f-private
           helm_chart_name: rebom
           reliza_api_id: ${{ secrets.RELIZA_API_ID }}
           reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
           path: helm
           registry_type: CHARTMUSEUM
-          reliza_project_id: 4aa0e445-9f12-4c80-880a-f919c1761f6c
+          reliza_project_id: 782a608e-dbf7-4827-ace4-9c65d81642ae
