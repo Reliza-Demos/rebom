@@ -52,5 +52,5 @@ jobs:
           reliza_api_id: ${{ secrets.RELIZA_API_ID }}
           reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
           path: helm
-          registry_type: CHARTMUSEUM
+          registry_type: OCI
           reliza_project_id: 782a608e-dbf7-4827-ace4-9c65d81642ae
