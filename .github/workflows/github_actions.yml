@@ -47,7 +47,7 @@ jobs:
         with:
           registry_username: ${{ secrets.DOCKER_LOGIN }}
           registry_password: ${{ secrets.DOCKER_TOKEN }}
-          registry_host: https://registry.relizahub.com/8c86c264-f905-42b0-9869-d6f6a6e59b8f-private
+          registry_host: registry.relizahub.com/8c86c264-f905-42b0-9869-d6f6a6e59b8f-private
           helm_chart_name: rebom
           reliza_api_id: ${{ secrets.RELIZA_API_ID }}
           reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
